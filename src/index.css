@@ -1,0 +1,340 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+  /* Header */
+.base {
+  background-color: #1E3156;
+  height: 45px;
+}
+.left {
+  display: inline-block;
+  position: absolute;
+  left: 48px;
+  top: 10px;
+}
+.left img {
+  width: 72px;
+  height: 72px;
+}
+.navbar {
+  display: block;
+  position: absolute;
+  left: 460px;
+  top: 10px;
+  width: 626px;
+}
+.navbar li {
+  display: inline-block;
+  list-style: none;
+  padding: 0 7%;
+  font-family: "Cabin", sans-serif;
+  font-weight: bolder;
+}
+.navbar li a {
+  color: white;
+  text-decoration: none;
+}
+.navbar li a:hover,
+.navbar li a.active {
+  color: #fc92e3;
+}
+
+/* Home Section */
+#home{
+  background-color: aliceblue;
+}
+.container{
+  margin: 80px 30px 0;
+  padding-bottom: 100px;
+}
+
+/* Form */
+div, form, input, p { 
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  color: #666;
+  line-height: 22px;
+  }
+  h1 {
+  position: absolute;
+  margin: 0;
+  font-size: 32px;
+  color: #fff;
+  z-index: 2;
+  }
+  .testbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  padding: 20px;
+  width: 50%;
+  }
+  form {
+  width: 80%;
+  padding: 20px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 0 10px 0 #cc0052; 
+  }
+  .banner {
+  position: relative;
+  height: 210px;
+  background-image: url("../public/images/from-banner.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  }
+  .banner::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.4); 
+  position: absolute;
+  width: 100%;
+  height: 35%;
+  }
+  input, textarea {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  }
+  input {
+  width: calc(100% - 10px);
+  padding: 5px;
+  }
+  textarea {
+  width: calc(100% - 12px);
+  padding: 5px;
+  }
+  .item:hover p, input:hover::placeholder {
+  color: #cc0052;
+  }
+  .item input:hover, .item textarea:hover {
+  border: 1px solid transparent;
+  box-shadow: 0 0 6px 0 #cc0052;
+  color: #cc0052;
+  }
+  .item {
+  position: relative;
+  margin: 10px 0;
+  }
+  .btn-block {
+  margin-top: 10px;
+  text-align: center;
+  }
+  button {
+  width: 150px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px; 
+  background: #cc0052;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  }
+  button:hover {
+  background: #ff0066;
+  }
+  @media (min-width: 568px) {
+  .name-item, .contact-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  }
+  .contact-item .item {
+  width: calc(50% - 8px);
+  }
+  .name-item input {
+  width: calc(50% - 20px);
+  }
+  .contact-item input {
+  width: calc(100% - 12px);
+  }
+}
+
+/* Collage */
+.collage{
+  position: absolute;
+  width: 45%;
+  left: 53%;
+  top: 27%;
+}
+
+/* Article Section */
+#article{
+  background-color: #FEFBEA;
+  padding-bottom: 100px;
+  /* background-image: url('../public/images/wpp.jpg'); */
+}
+#art{
+  position: relative;
+  text-align: center;
+  padding-top: 25px;
+  font: small-caps bold 24px/1 sans-serif;
+  font-size: 60px;
+  color: black;
+}
+#art1{
+  position: relative;
+  margin-top: 20px;
+  text-align: center;
+  font: italic small-caps bold 16px/2 cursive;
+  font-size: 30px;
+  color: black;
+}
+#contri{
+  font: italic 1.2em "Fira Sans", serif;
+  position: relative;
+  margin-left: 800px;
+  color: black;
+  
+}
+#img_art1{
+  border-radius: 10%;
+  width:450px;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float:left;
+  
+}
+#cnt1{
+  position: absolute;
+  margin-left: 475px;
+  color: black;
+  font:bold;
+
+}
+.carousel-control.left, .carousel-control.right {
+  background-image: none !important;
+  outline: none;
+}
+
+/* Shop Section */
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Istok Web", sans-serif;
+}
+
+#shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: aliceblue;
+}
+
+.heading{
+    font-size: 3rem;
+    color: black;
+    font-weight: bolder;
+    position: relative;
+    bottom: 300px;
+    left: 35%;
+}
+
+.card {
+  position: relative;
+  width: 320px;
+  height: 480px;
+  background: #191919;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  background: #ffce00;
+  transform: skewY(345deg);
+  transition: 0.5s;
+}
+
+.card:hover::before {
+  top: -70%;
+  transform: skewY(390deg);
+}
+
+.card::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 6em;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.card .imgBox {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  z-index: 1;
+}
+
+.card .contentBox {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.card .contentBox h3 {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card .contentBox .price {
+  font-size: 24px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.card .contentBox .buy {
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  padding: 10px 30px;
+  margin-top: 15px;
+  color: #000000;
+  text-decoration: none;
+  background: #ffce00;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.card:hover .contentBox .buy {
+  top: 0;
+  opacity: 1;
+}
+
+.mouse {
+  height: 300px;
+  width: auto;
+}
